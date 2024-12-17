@@ -1,4 +1,4 @@
-import 'polyfill-object.fromentries'
+
 
 import { ResizeObserver } from '@juggle/resize-observer'
 import flat from 'array.prototype.flat'

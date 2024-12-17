@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-require('dotenv').config({ path: '.env.production' })
+require('dotenv').config({ path: '.env' })
 const child_process = require('child_process')
 const fs = require('fs/promises')
 const { promisify } = require('util')

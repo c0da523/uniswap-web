@@ -384,8 +384,10 @@ function parseRemoteActivity(
   try {
     if (assetActivity.details.__typename === 'SwapOrderDetails') {
       return parseUniswapXOrder(assetActivity as OrderActivity)
+    } else if (assetActivity.details.__typename === 'OnRampTransactionDetails') {
+      // 用于处理 on-ramp（法币到加密货币）交易。
+      return undefined
     }
-
     const changes = assetActivity.details.assetChanges.reduce(
       (acc: TransactionChanges, assetChange) => {
         if (assetChange.__typename === 'NftApproval') acc.NftApproval.push(assetChange)

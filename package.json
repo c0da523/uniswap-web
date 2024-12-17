@@ -263,7 +263,6 @@
     "node-vibrant": "^3.2.1-alpha.1",
     "numbro": "^2.3.6",
     "polished": "^3.3.2",
-    "polyfill-object.fromentries": "^1.0.1",
     "qrcode.react": "^3.1.0",
     "qs": "^6.9.4",
     "rc-slider": "^10.0.1",
@@ -307,5 +306,6 @@
     "npm": "please-use-yarn",
     "node": "18.x",
     "yarn": ">=1.22"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
